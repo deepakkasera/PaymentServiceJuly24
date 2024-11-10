@@ -25,6 +25,7 @@ public class PaymentController {
     @PostMapping()
     public String generatePaymentLink(@RequestBody GeneratePaymentLinkRequestDto requestDto) throws RazorpayException, StripeException {
         //Ideally we should handle the exception in the Controller using Controller Advices.
+        System.out.println("Testing Payment Controller to generate Payment Link");
         return paymentService.generatePaymentLink(requestDto.getOrderId());
     }
 
