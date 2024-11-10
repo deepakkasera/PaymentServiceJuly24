@@ -16,6 +16,9 @@ public class RazorpayClientConfig {
 
     @Bean
     public RazorpayClient createRazorpayClient() throws RazorpayException {
+
+        System.out.println("Adding a random print statement to test git commands.");
+
         return new RazorpayClient(razorpayKeyId, razorpayKeySecret);
     }
 }
