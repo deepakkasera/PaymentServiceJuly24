@@ -19,6 +19,7 @@ public class PaymentController {
 
     public PaymentController(@Qualifier("stripePaymentGateway") PaymentService paymentService) {
         this.paymentService = paymentService;
+        System.out.println("Added print statement to test git");
     }
 
     //POST -> http://localhost:8080/payments
